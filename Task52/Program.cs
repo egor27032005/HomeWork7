@@ -39,10 +39,11 @@ double Сalculations(double [,] matrix)
             sum+= matrix[i, j];
         }
         resalt=sum/matrix.GetLength(0);
-        Console.WriteLine(resalt);
+        Console.Write(resalt +", ");
     }
     return resalt;
 } 
 Double[,] array2D=CreateArrayDouble(5, 5, -9, 9);
 PrintMatrix(array2D); 
+Console.WriteLine("среднее арифмитическое каждого столбика: ");
 Сalculations(array2D); 
